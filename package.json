@@ -1,0 +1,52 @@
+{
+  "name": "static-responsive-website",
+  "version": "1.0.0",
+  "description": "Um website simples, estático e responsivo.",
+  "main": "index.js",
+  "keywords": [
+    "website",
+    "estático",
+    "responsivo",
+    "html",
+    "css",
+    "sass",
+    "javascript"
+  ],
+  "homepage": "https://static-responsive-website.herokuapp.com",
+  "repository": "https://github.com/LucianoRochaDev/static-responsive-website",
+  "bugs": {
+    "url": "https://github.com/LucianoRochaDev/static-responsive-website/issues",
+    "email": "luciano.rocha.dev@gmail.com"
+  },
+  "scripts": {
+    "dev-start": "nodemon server.dev.js",
+    "build": "webpack --mode production",
+    "preinstall": "npm install pm2 -g",
+    "start": "pm2-runtime start ecosystem.config.js --env production"
+  },
+  "author": "Luciano Rocha Cunha <luciano.rocha.dev@gmail.com> (https://www.linkedin.com/in/luciano-rocha-cunha-aba70085/)",
+  "license": "GNU GENERAL PUBLIC LICENSE v3.0",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "googleapis": "^82.0.0",
+    "nodemailer": "^6.6.2",
+    "pm2": "^5.1.0"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.2.0",
+    "css-minimizer-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.1.0",
+    "nodemon": "^2.0.12",
+    "replace-in-file-webpack-plugin": "^1.0.6",
+    "webpack": "^5.47.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "engines": {
+    "npm": "^7.16.0",
+    "node": "^14.16.1"
+  }
+}

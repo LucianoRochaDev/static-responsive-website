@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Um website simples, estático e responsivo. Projeto para prática de desenvolvimento web."
+    />
+    <meta
+      name="keywords"
+      content="website, estático, responsivo, html, css, sass, javascript, node.js"
+    />
+    <meta name="author" content="Luciano Rocha Dev" />
+    <meta
+      property="og:image"
+      content="https://live.staticflickr.com/65535/51374515323_1015a0f241_k.jpg"
+    />
+    <title>Static Responsive Website</title>
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style/css/estilos.css" />
+  </head>
+  <body>
+    <a id="top"> </a>
+    <header class="navbar-flex">
+      <div class="item">
+        <img class="img-logo" src="./img/logo-luty-azul.svg" alt="Logo" />
+      </div>
+      <div class="item collapsible">
+        <input type="checkbox" id="bt_menu" />
+        <label id="label" for="bt_menu">&#9776;</label>
+        <div class="item menu-content">
+          <ul id="nav_menu">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#estrutura">ESTRUTURA</a></li>
+            <li><a href="#aprendizado">APRENDIZADO</a></li>
+            <li><a href="#contato">CONTATO</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="item div-icons">
+        <a href="https://github.com/LucianoRochaDev" target="_blank">
+          <img src="./img/icon-github.png" alt="github" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/luciano-rocha-cunha-aba70085/"
+          target="_blank"
+        >
+          <img src="./img/icon-linkedin.png" alt="linkedin" />
+        </a>
+        <a id="share">
+          <img src="./img/icon-share.png" alt="share" />
+        </a>
+      </div>
+    </header>
+
+    <main class="main-container" id="main-container">
+      <section class="section" id="sec-home">
+        <article id="art-top" class="article">
+          <h1 id="home">
+            <span class="navigation minus"><a href="#top">&Lt;</a></span
+            >&nbsp;&nbsp;&nbsp;&nbsp;Bem vindo!&nbsp;&nbsp;&nbsp;&nbsp;<span
+              class="navigation minus"
+              ><a href="#sec-estrutura">&Gt;</a></span
+            >
+          </h1>
+          <p>
+            Este website é um projeto destinado a prática de desenvolvimento
+            web. O desafio consistiu em criar um static responsive website bem
+            simples, utilizando somente as tecnologias HTML, CSS, SASS e JS.
+          </p>
+          <br />
+          <p>
+            Além de colocar conhecimento em prática e realizar
+            <del>muitas</del> horas de pesquisa, aproveitei para compartilhar
+            meu aprendizado e alguns detalhes sobre a estrutura desta página.
+          </p>
+          <p>Obrigado pela sua paciência e atenção!</p>
+        </article>
+        <article id="art-bottom" class="article">
+          <div>
+            <h1>Sobre mim</h1>
+            <p>
+              Meu nome é Luciano Rocha Cunha, sou Técnico em Administração,
+              graduado em Sistemas de Informação (2022). Possuo experiência
+              profissional na área administrativa, e como Técnico de Suporte em
+              Sistemas. Sigo adquirindo conhecimentos para me tornar um
+              Desenvolvedor Junior!
+            </p>
+            <br />
+            <p>
+              Também tenho paixão por arte, sou músico, compositor, escritor e
+              produtor musical.
+            </p>
+          </div>
+          <img src="./img/token_1.png" alt="avatar" />
+        </article>
+      </section>
+      <section class="section" id="sec-estrutura">
+        <article class="article">
+          <div class="sec-tittle">
+            <h1 id="estrutura">Estrutura</h1>
+          </div>
+          <h3 class="center" id="idealizacao">
+            <span class="navigation"><a href="#home">&Lt;</a></span
+            >&nbsp;&nbsp;&nbsp;&nbsp;Idealização&nbsp;&nbsp;&nbsp;&nbsp;<span
+              class="navigation"
+              ><a href="#tecnologias">&Gt;</a></span
+            >
+          </h3>
+          <br />
+          <p>
+            Após alguns meses realizando um curso de JS na
+            <a target="_blank" href="https://www.udemy.com/">Udemy</a>, decidi
+            praticar desenvolvimento web de forma progressiva. Portanto,
+            idealizei meu primeiro projeto como uma página estática, responsiva
+            e simples. Eu não queria criar um website simulando um negócio
+            fictício, então pensei num projeto que trouxesse visibilidade e
+            espaço para expor meu aprendizado adquirido na construção do próprio
+            projeto.
+          </p>
+          <br />
+          <p>
+            <a
+              target="_blank"
+              href="https://developer.mozilla.org/pt-BR/docs/Web"
+            >
+              <img
+                src="./img/web-tecs.png"
+                alt="tecnologias-web"
+                id="img-estrutura"
+              />
+            </a>
+            Eis a concepção: Após definir o layout, criei a estrutura utilizando
+            HTML5 semântico e SASS para estilizar com CSS3. Por fim implementei
+            JavaScript no cliente e no servidor para o funcionamento da página
+            corresponder a minha idealização.
+          </p>
+          <br />
+          <p>
+            A característica estática ficou por conta do conteúdo estar disposto
+            em uma única página, sem área para login ou personalizações, além de
+            um simples formulário para contato. E também pelo Express servir os
+            arquivos estáticos contidos na pasta raiz do aplicativo, como html,
+            css, js e imagens.
+          </p>
+          <br />
+          <p>
+            A característica responsiva ficou a cargo do CSS gerado pelo SASS
+            (maior código do projeto), com mixins, media queries, includes,
+            ajustes de propriedades e display dos elementos.
+          </p>
+          <br />
+          <br />
+          <h3 id="tecnologias" class="center">
+            <span class="navigation"><a href="#idealizacao">&Lt;</a></span
+            >&nbsp;&nbsp;&nbsp;&nbsp;Tecnologias&nbsp;&nbsp;&nbsp;&nbsp;<span
+              class="navigation"
+              ><a href="#header">&Gt;</a></span
+            >
+          </h3>
+          <br />
+          <p>Front-end – HTML, CSS, SASS e JS.</p>
+          <br />
+          <p>
+            Back-end – Node.js, Express, Dotenv, GoogleAPIs, Nodemailer,
+            Nodemon, Webpack e Pm2.
+          </p>
+          <br />
+          <p>
+            Ferramentas – VS Code, Github, Gmail, muito Google e um pouco de
+            Photoshop.
+          </p>
+          <br />
+          <p>Hospedagem – Heroku.</p>
+          <br />
+          <br />
+          <h3 id="header" class="center">
+            <span class="navigation"><a href="#tecnologias">&Lt;</a></span
+            >&nbsp;&nbsp;&nbsp;&nbsp;Header&nbsp;&nbsp;&nbsp;&nbsp;<span
+              class="navigation"
+              ><a href="#sections">&Gt;</a></span
+            >
+          </h3>
+          <br />
+          <p>
+            Primeiramente, defini o background do body da página como uma imagem
+            fixa que utiliza altura máxima. Esta imagem serviu como fundo para o
+            navbar, pois decidi cria-lo com efeito de transparência. Escolhida a
+            classe para o header, utilizei o display flex, algumas propriedades
+            de alinhamento e box-shadow para estilizar o navbar. Defini 3 divs
+            dentro do header e atribuí a classe item para todos, a fim facilitar
+            a estilização, já que cada div é um item dentro de um flexbox. As
+            divs estão justificadas no navbar como space-between, sendo a
+            primeira na esquerda, a segunda no centro e a terceira na direita.
+          </p>
+          <br />
+          <p>
+            <strong>Importante:</strong>
+            <em
+              >As imagens utilizadas na página foram exportadas pelo Photoshop
+              com qualidade reduzida (até um limite aceitável) no formato JPG.
+              Exceto imagens com transparência no formato PNG. Ainda sim as
+              imagens foram comprimidas pelo
+              <a target="_blank" href="https://tinypng.com/">tinypng.com</a>.
+              Quando possível, também é bom converter logos e icons para o
+              formato SVG. Esses cuidados reduzem o tamanho final da pasta de
+              imagens ;)</em
+            >
+          </p>
+          <br />
+          <p>
+            Na primeira div inseri a imagem da minha logo, que criei no
+            Photoshop por causa deste projeto, depois a converti para o formato
+            SVG.
+          </p>
+          <br />
+          <p>
+            <img src="./img/gif-navbar.gif" alt="gif-navbar" id="img-gif" />
+            A segunda div comportou o menu, que conta com um input checkbox e
+            seu label, além de uma div interna (abaixo do label) para disposição
+            da lista desornada do menu propriamente dito. O checkbox serviu para
+            tornar o menu retrátil. Funciona da seguinte forma: Antes de tudo,
+            defini list-style-type como none para listas no escopo global da
+            página. O label é um código HTML Unicode utf-8 (um símbolo de
+            trigrama) com display none, o input checkbox também tem a
+            propriedade display none. O label muda o display para inline através
+            de mixins/media queries somente em larguras de tela menores. Ao
+            mesmo tempo, a div abaixo, que comporta a lista do menu, fica com a
+            propriedade max-height zerada durante a view em telas menores. O
+            efeito causado é, quando a tela diminui, o menu some e o label
+            aparece disponível para ser acionado. Ao checar o input (através do
+            label), o menu volta a aparecer devido o max-height mudar para 100%.
+            Isso gera o efeito retrátil. Além das propriedades do input checkbox
+            e do label, mencionei propriedades da div que contém o menu. Ainda
+            temos a &lt;ul&gt; e as &lt;li&gt;, que formam o menu dentro desta
+            div. A ul possui display flex, que muda para block em telas menores,
+            entre outras propriedades. As li e suas ancoras sofrem mudanças de
+            padding, margin e height para se ajustarem.
+          </p>
+          <br />
+          <p>
+            A terceira div do header/navbar serviu para dispor 3 elementos
+            ancora, com um icon dentro de cada um. Eles apontam para o meu
+            github, linkedin, e a última tag serve como botão para compartilhar.
+            No cliente JS, criei uma função que espera pelo evento click desta
+            ancora, para então copiar a url do site, emitir um alerta
+            informativo e por fim direcionar o usuário para o footer da página
+            (onde existem botões de compartilhamento com várias opções). Dessa
+            forma o usuário pode apenas colar a url já copiada em algum lugar ou
+            escolher uma opção mais moderna de compartilhamento disponível.
+          </p>
+          <br />
+          <p>
+            Vale mencionar que utilizei um font-size mediano para o menu e para
+            o site em geral, visando acessibilidade. Também importei a fonte do
+            <a target="_blank" href="https://fonts.google.com/">Google Fonts</a>
+            via CDN ao invés de baixar o arquivo ttf.
+          </p>
+          <br />
+          <br />
+          <h3 id="sections" class="center">
+            <span class="navigation"><a href="#header">&Lt;</a></span
+            >&nbsp;&nbsp;&nbsp;&nbsp;Sections&nbsp;&nbsp;&nbsp;&nbsp;<span
+              class="navigation"
+              ><a href="#formulario">&Gt;</a></span
+            >
+          </h3>
+          <br />
+          <p>
+            <img src="./img/gif-cod.gif" alt="html-print" id="img-gif2" />
+            O conteúdo da página vem logo abaixo do header, dentro da tag main,
+            que por sua vez contém as sections e articles. As sections alocam um
+            ou mais articles com títulos e parágrafos. Além dos ids individuais,
+            escolhi uma classe comum para todas as sections, a fim de padronizar
+            posições e espaçamentos. Editei imagens e gifs para inserir dentro
+            dos articles junto ao texto, usando as propriedades float, width e
+            margin. Ainda sim, com atenção para incluir e ajustar os devidos
+            mixins criados com SASS, a fim de reposicionar as imagens de acordo
+            com o tamanho da tela.
+          </p>
+          <br />
+          <p>
+            Adicionei botões next e previous aos títulos e subtítulos dos
+            artigos, que na verdade são símbolos Unicode/HTML, dentro de tags
+            âncora, dentro de um span estilizado. A ideia aqui foi facilitar a
+            navegação para mobile. Outro detalhe foi a implementação de botões
+            back to top localizados em alguns pontos da página. Eles disparam
+            uma tooltip feita apenas com HTML e CSS. Para construir, criei uma
+            div com classe para estilizar, dentro dela há uma tag âncora que
+            contém a imagem do centro do botão, e abaixo da âncora vem um span
+            com o texto da tooltip. Utilizei uma classe neste span para
+            estilizar as cores e animação, além de manter o atributo opacity
+            zerado. Ao passar o mouse sobre a div do botão, a opacity do span
+            muda para 1, resultando no efeito da tooltip. Confira aqui em baixo!
+          </p>
+          <br /><br />
+          <div class="back-to-top">
+            <a href="#top" aria-label="Scroll to Top"
+              ><img
+                class="back-to-top-bt on-black"
+                src="./img/top-button.png"
+                alt="Voltar-ao-topo"
+            /></a>
+            <span class="tooltip">Voltar ao topo!</span>
+          </div>
+          <br /><br />
+          <br />
+          <h3 id="formulario" class="center">
+            <span class="navigation"><a href="#sections">&Lt;</a></span
+            >&nbsp;&nbsp;&nbsp;&nbsp;Formulário&nbsp;&nbsp;&nbsp;&nbsp;<span
+              class="navigation"
+              ><a href="#footer">&Gt;</a></span
+            >
+          </h3>
+          <br />
+          <p>
+            Criei o formulário de contato dentro de uma section, ele possui
+            classe diferenciada, h1, inputs e textarea com respectivos ids.
+            Optei por utilizar validação client-side do próprio HTML5 no
+            formulário, por ser mais simples e prático. Utilizei display block
+            nesta section, além de propriedades para posicionar e dimensionar
+            cada elemento. Também escolhi uma font-family do meu agrado para os
+            campos.
+          </p>
+          <p>
+            O form está disposto no fim da tag main, logo acima do footer da
+            página. Sua funcionalidade, obviamente, é permitir que usuário envie
+            um e-mail diretamente para mim. Para isso ser possível precisei do
+            JS no cliente e no server, utilizando AJAX.
+          </p>
+          <br />
+          <p>
+            <a target="_blank" href="https://nodejs.org/pt-br/">
+              <img
+                src="./img/nodejs-logo.jpg"
+                alt="gif-navbar"
+                id="img-form1"
+              />
+            </a>
+            No lado do cliente, criei variáveis para retornar o seletor do form
+            e obter elementos de cada id dos inputs e textarea. Cancelei o
+            evento submit do form para criar uma nova variável formData contendo
+            os valores dos elementos (preenchidos nos campos do form). Logo
+            após, instanciei um objeto para solicitações HTTP e transferência de
+            dados entre cliente e servidor, o XMLHttpRequest, que faz a mágica
+            do AJAX acontecer, permitindo a recuperação de dados sem ter que
+            atualizar uma página inteira. Após abrir uma nova requisição com
+            método POST e definir a URL para envio da solicitação, setei o
+            cabeçalho da requisição e tipo de texto JSON para ser enviado ao
+            servidor. O formData que contém os dados do form são enviados para o
+            servidor de forma assíncrona, já convertidos de javascript para
+            string JSON.
+          </p>
+          <br />
+          <p>
+            <a target="_blank" href="https://expressjs.com/">
+              <img src="./img/express-js.jpg" alt="html-print" id="img-form2" />
+            </a>
+            No lado do servidor, instanciei o express, nodemailer, googleapis e
+            o dotenv. Escolhida a porta a ser usada pelo server, utilizei a
+            função middleware do express para entregar arquivos estáticos,
+            definindo a pasta src como static, além de outro método do express
+            para reconhecer todos os objetos de requests como objetos JSON.
+            Também defini o método GET na url raíz “/” para servir o arquivo
+            index.html dentro da pasta src, nossa página principal (e única).
+          </p>
+          <br />
+          <p>
+            <strong>Detalhe: </strong
+            ><em
+              >A configuração do Express mencionada acima, levou em conta a
+              estrutura de pastas do projeto em ambiente de desenvolvimento. Ao
+              criar a build do projeto para produção, essa estrutura muda.
+              Trarei mais detalhes no tópico Build & Hospedagem.
+            </em>
+          </p>
+          <br />
+          <p>
+            <a
+              target="_blank"
+              href="https://console.cloud.google.com/home/dashboard"
+            >
+              <img
+                src="./img/google-cloud.svg"
+                alt="html-print"
+                id="img-google"
+              />
+            </a>
+            Aqui entra o Nodemailer, um módulo para envio de e-mails
+            automatizados através de aplicações em ambiente Node.js. Criei o
+            método post no Express, para instanciar o transporter do Nodemailer
+            e inseri as informações do serviço de e-mail utilizado, no caso o
+            Gmail, que faz o papel de enviar a mensagem do formulário. Vale
+            ressaltar que não informei as credenciais da minha conta diretamente
+            no código da aplicação servidor. Utilizei o Dotenv ao criar um
+            arquivo ".env" na pasta do projeto, que me permitiu registrar estes
+            dados sensíveis e assim poder acessa-los no código JS como
+            process.env.EMAIL_USER, por exemplo. Para utilizar o serviço do
+            Gmail nesta aplicação, tive que configurar a conta, criar um projeto
+            no Google Cloud Platform, configurar a API do Gmail e habilitar a
+            autenticação OAuth 2.0, para utilizar credenciais seguras. O OAuth
+            funciona com alguma conta de e-mail vinculada a cliente id, cliente
+            secret, token de acesso e refresh token, não é como um login comum.
+            Por isso, também precisei instalar a lib Google APIs para Node.js,
+            que usei para atualizar o accessToken e refreshToken da conta de
+            e-mail utilizada no formulário. Caso contrário, as chaves iriam
+            expirar depois de um tempo, e o formulário deixaria de funcionar.
+            <a target="_blank" href="https://nodemailer.com/about/">
+              <img src="./img/n2-2.png" alt="html-print" id="img-form3" />
+            </a>
+          </p>
+          <br />
+          <p>
+            Pois bem, o próximo passo foi criar uma variável no código JS com as
+            informações necessárias para o envio do e-mail, informações estas
+            acessadas por req.body.nomedavariavel de cada campo preenchido pelo
+            usuário no formulário, registradas e enviadas pelo lado cliente para
+            o servidor. Aqui podemos montar o e-mail a ser enviado à nosso
+            gosto. O remetente é o meu e-mail criado para Mail Service, e o
+            destinatário é minha outra conta Gmail usada para trabalhos de
+            desenvolvimento. No assunto criei um padrão escrito e alguns dados
+            do usuário. Já no texto da mensagem, inclui todos os dados
+            preenchidos pelo usuário no formulário de contato. Essa foi a
+            organização que decidi para receber os e-mails. Por fim, ainda no
+            server-side, o Nodemailer executa o método para envio da mensagem.
+            Caso ocorra erro no método, a resposta HTTP enviada para o
+            client-side é error, do contrário, success.
+          </p>
+          <br />
+          <p>
+            Voltando ao client-side, a função onload do
+            <a
+              target="_blank"
+              href="https://developer.mozilla.org/pt-BR/docs/Web/API/XMLHTTPRequest"
+              >XMLHttpRequest</a
+            >
+            estava aguardando a resolução do Request-Response. Se o responseText
+            for success, é emitido um alerta avisando que o e-mail foi enviado e
+            os campos preenchidos do formulário são apagados. Caso contrário
+            (retorno error), um alerta é emitido avisando que algo deu errado.
+          </p>
+          <br />
+          <p>
+            <em>Interessante:</em> Percebi que havia um delay entre o evento
+            submit (clicar em enviar, após preencher o formulário) e a resposta
+            da request que dispara o alerta no lado do cliente. Durante estes
+            instantes, eu pude clicar várias vezes seguidas antes da mensagem de
+            alerta aparecer, o que gerou e-mails duplicados. Após testar algumas
+            otimizações sem êxito (já é um projeto bem simples), implementei no
+            JS cliente uma mudança de estado diretamente no id do input submit:
+            desabilitei o botão enviar logo quando o event submit é
+            identificado, e reabilitei o botão somente após o recebimento do
+            response e emissão do alerta na tela. Problema resolvido.
+          </p>
+          <br />
+          <br />
+          <h3 id="footer" class="center">
+            <span class="navigation"><a href="#formulario">&Lt;</a></span
+            >&nbsp;&nbsp;&nbsp;&nbsp;Footer&nbsp;&nbsp;&nbsp;&nbsp;<span
+              class="navigation"
+              ><a href="#build">&Gt;</a></span
+            >
+          </h3>
+          <br />
+          <p>
+            O rodapé da página foi estilizado utilizando a própria tag footer
+            como seletor. Conta com um parágrafo no final, indicando o copyright
+            do website, e com uma div inline-grid mais acima para comportar o
+            widget de compartilhamento universal. Esse componente versátil é um
+            grupo de âncoras/botões fornecido pela
+            <a target="_blank" href="https://www.addtoany.com/">AddToAny</a>,
+            uma plataforma opensource que disponibiliza plug-ins e widgets para
+            compartilhamento personalizado, bem fácil de integrar ao código da
+            página. Neste caso, foi integrado pelo HTML e link do arquivo JS
+            disponibilizado.
+          </p>
+          <br />
+          <br />
+          <h3 id="build" class="center">
+            <span class="navigation"><a href="#footer">&Lt;</a></span
+            >&nbsp;&nbsp;&nbsp;&nbsp;Build & Deploy&nbsp;&nbsp;&nbsp;&nbsp;<span
+              class="navigation"
+              ><a href="#aprendizado">&Gt;</a></span
+            >
+          </h3>
+          <br />
+          <p>
+            Conforme mencionado no article do Formulário, a estrutura do projeto
+            difere nos ambientes de desenvolvimento e produção. No ambiente dev,
+            a organização ficou resumida a uma pasta src, com pastas separadas
+            para Imagens, Javascript e Estilos. Os principais arquivos para
+            funcionamento da aplicação são o arquivo index.html, dentro de src,
+            o arquivo estilos.css, dentro de style/css, e o arquivo app.js,
+            dentro de src/js. Também há uma pasta chamada scss, dentro de
+            styles, pois escrevi o código todo no arquivo estilos.scss e fiz o
+            <a target="_blank" href="https://sass-lang.com/">SASS</a> exportar
+            para a outra pasta como estilos.css. Não podemos esquecer do arquivo
+            mais importante, sem o qual não há funcionamento do website:
+            server.dev.js. Neste arquivo temos o Express servindo todo o
+            conteúdo estático, roteamento, comunicação cliente-servidor e
+            implementações necessárias ao formulário de contato. Este server
+            fica fora da pasta src, servindo a mesma.
+          </p>
+          <br />
+          <p>
+            Utilizei o
+            <a target="_blank" href="https://nodemon.io/">Nodemon</a> para
+            trabalhar no ambiente de desenvolvimento, este módulo disponibiliza
+            um servidor que roda sua aplicação node.js e monitora os arquivos
+            para reiniciar a aplicação automaticamente quando houver mudanças, e
+            seu foco é justamente o ambiente dev. <br /><em
+              >- Script criado no package.json: "dev-start": "nodemon
+              server.dev.js".</em
+            >
+          </p>
+          <br />
+          <p>
+            <a target="_blank" href="https://www.heroku.com/nodejs">
+              <img
+                src="./img/heroku-logo.svg"
+                alt="html-print"
+                id="img-heroku"
+              />
+            </a>
+            Antes de testar builds para produção, eu pesquisei o serviço de
+            hospedagem a ser utilizado. A princípio gostei do Netlify. É um
+            ótimo serviço para páginas estáticas, porém no meu caso, o website é
+            servido por código server-side node.js em express, e para rodar tal
+            aplicação seria necessário implementar Lambda e Netlify Functions.
+            Minha segunda opção foi o Heroku, que conta com ótimo suporte para
+            várias linguagens, incluindo aplicações em Node.js! Com certeza
+            facilitou meu deploy.
+          </p>
+          <br />
+          <p>
+            Para rodar meu website em produção, decidi usar o
+            <a target="_blank" href="https://pm2.keymetrics.io/">Pm2</a>, que é
+            um gerenciador de processos Node.js para manter e monitorar
+            aplicações, contando com ferramentas completas para tal. Conforme
+            indicações de integração com o Heroku, criei o arquivo
+            ecosystem.config.js com configurações a serem utilizadas no Pm2.
+            <br /><em
+              >- Scripts criados: "preinstall": "npm install pm2 -g" e "start":
+              "pm2-runtime start ecosystem.config.js --env production".</em
+            >
+          </p>
+          <br />
+          <p>
+            <a target="_blank" href="https://webpack.js.org/">
+              <img
+                src="./img/logo-webpack.svg"
+                alt="html-print"
+                id="img-webpack"
+              />
+            </a>
+            Agora podemos testar as builds! Existem várias ferramentas para
+            Node.js chamadas Bundlers, que permitem o funcionamento de códigos
+            no navegador, podem criar, organizar, minificar e comprimir arquivos
+            de acordo com a configuração desejada. Um dos mais conhecidos é o
+            Webpack, amado e odiado por muitos. Eu aprendi algo básico sobre
+            Webpack no curso de Javascript, porém ao primeiro teste, me perdi na
+            complexidade das configurações.
+          </p>
+          <p>
+            Decidi explorar o Parcel.js, que promete zero configuração e muita
+            agilidade. Realmente foi simples criar uma build com Parcel, mas é
+            um bundler totalmente opinativo e com tudo pronto. Como eu queria
+            algo que simplificasse meu objetivo mas que fosse facilmente
+            configurável e personalizável, voltei para o Webpack. Depois de
+            alguns artigos, documentação, testes e busca de vários plug-ins que
+            seriam necessários para o meu objetivo, me acostumei com o padrão de
+            configuração e cheguei ao resultado desejado. Meu arquivo
+            webpack.config.js ficou bem organizado e eficiente, e agora minhas
+            devDependencies no package.json contam com 9 plugins exclusivamente
+            para funcionamento do Webpack (lista na section Aprendizado).
+            <br /><em
+              >- Script para build do Webpack: "build": "webpack --mode
+              production".</em
+            >
+          </p>
+          <br />
+          <p>
+            <a target="_blank" href="https://github.com/">
+              <img
+                src="./img/github-logo.png"
+                alt="html-print"
+                id="img-github"
+              />
+            </a>
+            Precisei criar o arquivo index.js, que importa o app.js e o
+            estilos.css, para usar como entry no Webpack. A criação do arquivo
+            html ficou por conta de um plugin adicional, e a atualização dos
+            links href e src nos arquivos pós build também. Ao executar o script
+            de build, o webpack cria a pasta dist, copia as imagens do projeto
+            para a pasta dist/img, cria um index.html minificado, usando o
+            arquivo original como template, cria um arquivo app.js minificado, e
+            um arquivo estilos.css, também minificado. Por fim, cria o arquivo
+            server.prod.js fora da pasta dist (advinhe: minificado), que vai
+            servir o conteúdo estático assim como acontecia no ambiente de
+            desenvolvimento, porém servirá o conteúdo da pasta dist.
+          </p>
+          <br />
+          <p>
+            Criei um novo repositório no Github, sem executar o script build.
+            Assim como a maioria dos serviços de hosting, o Heroku possui
+            integração com o Github. Ao realizar o deploy da aplicação, o
+            próprio Heroku executa o script build (criando assim a build de
+            produção com o webpack) e o script start (ativando o Pm2 para rodar
+            e monitorar a aplicação em produção através do server.prod.js).
+          </p>
+          <br /><br />
+          <div class="back-to-top">
+            <a href="#top" aria-label="Scroll to Top"
+              ><img
+                class="back-to-top-bt on-black"
+                src="./img/top-button.png"
+                alt="Voltar-ao-topo"
+            /></a>
+            <span class="tooltip">Voltar ao topo!</span>
+          </div>
+        </article>
+      </section>
+      <section class="section aprendizado">
+        <article class="article">
+          <h1 id="aprendizado">
+            <span class="navigation minus"><a href="#build">&Lt;</a></span
+            >&nbsp;&nbsp;&nbsp;&nbsp;Aprendizado&nbsp;&nbsp;&nbsp;&nbsp;<span
+              class="navigation minus"
+              ><a href="#aprendizado1">&Gt;</a></span
+            >
+          </h1>
+          <p>
+            Finalizei este projeto em menos de dois meses, levando em
+            consideração que usei o tempo livre entre trabalho, faculdade e vida
+            pessoal. Etapas mais desafiadoras: navbar, formulário de contato e o
+            processo de build para produção. O navbar foi o começo do projeto e
+            já me fez relembrar/pesquisar bastante sobre estrutura HTML, CSS com
+            SASS e responsividade. <br /><br /><em
+              >O aprendizado durante a trajetória deste projeto não consiste
+              somente em descobrir novas técnicas, mas também em fixar
+              conhecimentos já adquiridos, praticar tecnologias e enfrentar
+              dificuldades.</em
+            >
+          </p>
+          <br />
+          <br />
+          <h3 class="center" id="aprendizado1">
+            <span class="navigation"><a href="#aprendizado">&Lt;</a></span>
+            &nbsp;&nbsp;&nbsp;&nbsp;Navbar&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="navigation"><a href="#aprendizado2">&Gt;</a></span>
+          </h3>
+          <br />
+          <p>- <u>Começando pelo navbar, qual foi meu aprendizado?</u></p>
+          <br />
+          <p>
+            Formatos e otimização de imagens, personalizar cores e efeitos de
+            sombra, conceitos flexbox, mixing e media queries para
+            responsividade, display, posicionamento e espaçamento para
+            responsividade, uma técnica para construir menus retrateis, boa
+            escolha de font e como usar Javascript para manipular a DOM na
+            prática, mesmo que para uma funcionalidade simples como o botão
+            share. Logicamente, tive que relembrar e pesquisar boas práticas de
+            semântica HTML5 para montar o esqueleto da página antes mesmo de
+            começar o navbar.
+          </p>
+          <br />
+          <p>
+            Posso dizer que, esses aprendizados sobre responsividade nortearam a
+            construção de todo o website, que fluiu muito bem após a feature do
+            navbar. A definição da estrutura e estilo das sections, o conteúdo
+            textual e as imagens foram simples e divertidas de implementar! Até
+            que chegamos ao form... Meu primeiro formulário funcional. Foi
+            desafiador e gostei bastante! Demandou pesquisa e vários testes.
+            Primeiramente defini meu HTML e CSS, depois criei um arquivo JS a
+            parte para implementar o Nodemailer independente do website e poder
+            realizar testes. Isoladamente, funcionou muito bem. Porém ao inserir
+            o código no server-side da página, não funcionou.
+          </p>
+          <br />
+          <br />
+          <h3 class="center" id="aprendizado2">
+            <span class="navigation"><a href="#aprendizado1">&Lt;</a></span>
+            &nbsp;&nbsp;&nbsp;&nbsp;Form&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="navigation"><a href="#aprendizado3">&Gt;</a></span>
+          </h3>
+          <br />
+          <p>
+            -
+            <u
+              >Qual foi meu aprendizado ao implementar o formulário de
+              contato?</u
+            >
+          </p>
+          <br />
+          <p>
+            Validação cliente-side pelo HTML5, configuração de conta, API e
+            OAtuh2.0 no Gmail, utilizar o módulo/arquivo .env, utilizar o módulo
+            Nodemailer para envio de e-mails pelo Node.js, utilizar o framework
+            Express para roteamento, servir arquivos estáticos e comunicação
+            cliente-servidor via AJAX.
+          </p>
+          <br />
+          <p>
+            Confesso que após algumas tentativas, tentar implementar o Express +
+            Nodemailer + Gmail para o back-end do formulário funcionar me gerou
+            certo estresse e desanimo. Foi aí que passei para outra demanda do
+            projeto, algo bem simples para distrair. Agoniado como sou, logo
+            voltei para o youtube e o google até encontrar uma estratégia de
+            implementação diferente, foi quando tive sucesso no teste de
+            contato! Daí pra frente realizei testes para ajustes mais finos.
+            Essa dificuldade foi muito boa, e era esse tipo de situação que eu
+            buscava quando idealizei este projeto.
+          </p>
+          <br />
+          <br />
+          <h3 class="center" id="aprendizado3">
+            <span class="navigation"><a href="#aprendizado2">&Lt;</a></span>
+            &nbsp;&nbsp;&nbsp;&nbsp;Build & Deploy&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="navigation"><a href="#conclusao">&Gt;</a></span>
+          </h3>
+          <br />
+          <p>- <u>O que aprendi durante o processo de build e deploy?</u></p>
+          <br />
+          <p>
+            Estrutura e organização de projetos web, diferenças entre o código
+            Javascript executado no browser e no server-side com Node.js,
+            ambiente de desenvolvimento, ambiente de produção, detalhes do
+            package.json, praticar npm e terminal, configurar e personalizar o
+            Webpack, praticar Git, conhecer especificações e funcionamento de
+            serviços de hospedagem e utilizar o Pm2.
+          </p>
+          <br />
+          <p>
+            Foi ótimo absorver conhecimento durante minhas pesquisas e conhecer
+            um pouco dos procedimentos, ferramentas e atores envolvidos nesta
+            etapa. Claro, o nível de complexidade foi abstraído pelo uso do
+            Heroku, que já disponibiliza tudo configurado e automatizado,
+            diferente de um cenário em que eu possuiria estrutura física ou
+            serviço IaaS e seria necessário configurar um servidor na mão, de
+            forma eficiente e segura. O que mais me tomou tempo foi ler
+            documentações e testar o Parcel e o Webpack, e por fim, configurar o
+            Webpack até que cada necessidade minha fosse atendida de forma
+            personalizada. Para isso, instalei os seguintes plug-ins:
+            copy-webpack-plugin, css-loader, css-minimizer-webpack-plugin,
+            html-webpack-plugin, mini-css-extract-plugin,
+            replace-in-file-webpack-plugin e webpack-node-externals, além dos
+            básicos webpack e webpack-cli.
+          </p>
+          <br />
+          <br />
+          <h3 id="conclusao" class="center">
+            <span class="navigation"><a href="#aprendizado3">&Lt;</a></span
+            >&nbsp;&nbsp;&nbsp;&nbsp;Conclusão&nbsp;&nbsp;&nbsp;&nbsp;<span
+              class="navigation"
+              ><a href="#contato">&Gt;</a></span
+            >
+          </h3>
+          <br />
+          <p>
+            Se há alguma dúvida sobre projetos pequenos agregarem muito
+            aprendizado, este website é a resposta perfeita. Fiquei
+            impressionado com a quantidade de texto que pude compartilhar ao
+            longo das seções e artigos. As tecnologias utilizadas aqui não são
+            as opções mais modernas e eficientes para desenvolvimento web
+            atualmente. Meus códigos provavelmente devem fugir às boas práticas
+            e simplicidade em certos trechos. Mas posso dizer que estou contente
+            com o resultado final deste projeto, pois o tempo e a prática levam
+            a perfeição! Pretendo subir os degraus na ordem correta.
+          </p>
+          <br />
+          <p>
+            Sou aspirante a desenvolvedor junior, pretendo focar em
+            desenvolvimento web back-end. No curso de Sistemas de Informação
+            tive contato com C, C++ e Java, até então meu planejamento era
+            estudar Java. Eu já tive contato com HTML e CSS anteriormente, então
+            resolvi ingressar em um curso de Javascript. Gostei mais do que o
+            esperado! E pude entender um pouco do ambiente Node.js e seu poder
+            server-side. No mais, acredito que estou seguindo o roadmap como
+            planejado, pois mesmo que meu objetivo seja back-end, é essencial
+            saber o básico de front-end e Javascript devido sua versatilidade e
+            predominância na web. Sem contar meu interesse por desenvolvimento
+            mobile, no futuro tanto o Java quanto o JavaScript podem me
+            possibilitar aprendizado nesta área. <br />Ojetivo a curto prazo:
+            continuar estudos e cursos, terminar minha graduação (2022) e
+            ingressar neste mercado de trabalho apaixonante e desafiador.
+          </p>
+          <br />
+          <p>Obrigado pela sua paciência e atenção!</p>
+          <p>Espero seu feedback!</p>
+          <br />
+          <br />
+          <div class="back-to-top">
+            <a href="#top" aria-label="Scroll to Top"
+              ><img
+                class="back-to-top-bt"
+                src="./img/top-button.png"
+                alt="Voltar-ao-topo"
+            /></a>
+            <span class="tooltip">Voltar ao topo!</span>
+          </div>
+        </article>
+      </section>
+      <section class="sec-form">
+        <form class="form-contato">
+          <h1 id="contato">Contato</h1>
+          <input
+            type="text"
+            id="nome"
+            placeholder="Seu nome"
+            name="nome"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            placeholder="E-mail"
+            name="email"
+            required
+          />
+          <input
+            type="text"
+            id="assunto"
+            placeholder="Assunto"
+            name="assunto"
+            required
+          />
+          <textarea
+            id="mensagem"
+            placeholder="Deixe sua mensagem..."
+            name="mensagem"
+            rows="6"
+            maxlength="1300"
+            required
+          ></textarea>
+          <input type="submit" id="enviar" value="Enviar" />
+        </form>
+      </section>
+      <div></div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+          <a class="a2a_button_linkedin"></a>
+          <a class="a2a_button_google_gmail"></a>
+          <a class="a2a_button_facebook"></a>
+          <a class="a2a_button_whatsapp"></a>
+          <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+        </div>
+      </div>
+      <p>Copyright &copy 2021. Luciano Rocha Cunha</p>
+    </footer>
+    <script src="./js/app.js"></script>
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+  </body>
+</html>
