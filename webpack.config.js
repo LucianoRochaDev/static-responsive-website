@@ -20,7 +20,6 @@ module.exports = [
       new HtmlWebpackPlugin({
         template: './src/index.html',
         inject: false,
-        scriptLoading: 'blocking',
       }),
       new MiniCssExtractPlugin({
         filename: 'estilos.css',
