@@ -34,7 +34,7 @@ module.exports = [
             },
             {
               search: '/js/app.js',
-              replace: 'app.js',
+              replace: '/app.js',
             },
           ],
         },
