@@ -35,7 +35,6 @@
     />
     <title>Static Responsive Website</title>
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./style/css/estilos.css" />
   </head>
   <body>
     <a id="top"> </a>
@@ -867,7 +866,16 @@
       </div>
       <p>Copyright &copy 2021. Luciano Rocha Cunha</p>
     </footer>
-    <script src="./js/app.js"></script>
-    <script async src="https://static.addtoany.com/menu/page.js"></script>
+    <script>
+      window.addEventListener('load', () => {
+        let link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = "./style/css/estilos.css";
+        document.head.appendChild(link)
+      })
+    </script>
+    <script defer src="./js/app.js"></script>
+    <script defer src="https://static.addtoany.com/menu/page.js"></script>
   </body>
 </html>
