@@ -61,7 +61,6 @@ app.post('/', (req, res) => {
       console.log('E-mail enviado: ' + info.response);
       res.send('success');
     }
-    transporter.close();
   });
 });
 
