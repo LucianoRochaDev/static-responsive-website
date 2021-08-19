@@ -36,6 +36,14 @@ module.exports = [
               search: '/js/app.js',
               replace: '/app.js',
             },
+            {
+              search: '<script defer="defer" src="./app.js"></script>',
+              replace: '',
+            },
+            {
+              search: '<link href="./estilos.css" rel="stylesheet">',
+              replace: '',
+            },
           ],
         },
       ]),
