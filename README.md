@@ -1,4 +1,4 @@
-# static-responsive-website
+# Static Responsive Website
 Um website simples, estático e responsivo. A simple, static and responsive website.
 Este website é um projeto destinado a prática de desenvolvimento web. O desafio consistiu em criar um static responsive website bem simples, utilizando somente as tecnologias HTML, CSS, SASS e JS. Além de colocar conhecimento em prática e realizar muitas horas de pesquisa, aproveitei para compartilhar meu aprendizado e alguns detalhes sobre a estrutura desta página, que você pode conferir em: https://static-responsive-website.herokuapp.com/
 
