@@ -13,6 +13,10 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/src/index.html');
 });
 
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/src/googled434adf21772c15f.html');
+});
+
 const REFRESH_TOKEN = process.env.REFRESH_TOKEN;
 const oAtuh2Client = new google.auth.OAuth2(
   process.env.CLIENT_ID,
