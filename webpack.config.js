@@ -20,6 +20,11 @@ module.exports = [
       new HtmlWebpackPlugin({
         template: './src/index.html',
       }),
+      new HtmlWebpackPlugin({
+        template: './src/googled434adf21772c15f.html',
+        filename: 'googled434adf21772c15f.html',
+        inject: false,
+      }),
       new MiniCssExtractPlugin({
         filename: 'estilos.css',
       }),
