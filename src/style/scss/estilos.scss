@@ -84,20 +84,6 @@ del {
   }
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background: url('https://live.staticflickr.com/65535/51341999211_945de9b78a_k.jpg');
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: initial;
-  background-color: black;
-  height: auto;
-  width: auto;
-  min-height: 100%;
-  overflow: visible;
-}
-
 // Header
 .navbar-flex {
   background: $opac;
@@ -216,6 +202,7 @@ body {
       align-items: center;
       overflow: hidden;
       margin-bottom: 1em;
+      margin-left: 1%;
     }
 
     @include breakpoint(large) {
@@ -223,7 +210,7 @@ body {
       align-items: center;
       overflow: hidden;
       margin-bottom: -0.5em;
-      margin-left: 0.5em;
+      margin-left: 0.6em;
     }
 
     li {
